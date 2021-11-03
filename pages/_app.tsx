@@ -1,8 +1,8 @@
+import type { AppProps } from 'next/app';
+import '../styles/globals.css'
 
-import type { NextPage } from 'next';
+function MyApp({ Component, pageProps }: AppProps) {
+  return <Component {...pageProps} />;
+}
 
- const Home: NextPage = () =>{
-   return <div>Hola mundo</div>
- };
-
- export default Home
+export default MyApp;
